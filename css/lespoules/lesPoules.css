@@ -1,0 +1,236 @@
+.content-page{
+    display: flex;
+
+}
+
+.content{
+
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+.content h2{
+    font-size: 35px;
+    padding: 10px;
+}
+
+
+/* DIV DES CARTES*/
+
+.content-all-cartes{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+/* CSS DE LA CARTE DE LA POULE */
+
+.carte{
+    margin: 30px;
+    width: 350px;
+    height: 350px;
+    box-shadow: grey 1px 1px 1px 1px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.haut:nth-child(2n+1){
+    background-color: #52C1EF;
+    flex: 1;
+}
+
+.bas{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+}
+
+.content-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.avatar{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border: 5px solid white;
+    position: relative;
+    top: 90px;
+    width: 100px;
+
+}
+
+.avatar-div{
+    display: none;
+    height: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.nom{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+.date-ajout{
+    text-align: center;
+    color: white;
+    margin: 0;
+}
+
+.age{
+    border-left: 3px solid grey;
+    border-right: 3px solid grey;
+    padding:  0 30px;
+}
+
+/*DELETE */
+
+.poubelle{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.delete{
+    color: white;
+    background-color: #2C3B41;
+    position: absolute;
+    width: 350px;
+    height: 350px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-oui-non{
+    margin-bottom: 10px;
+}
+
+.delete input[type="button"]{
+    background-color: #2C3B41;
+    border: 1px solid #FF473E;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.delete input[type="button"]:hover{
+    background-color: #FF473E;
+}
+
+/*CARTE GRISE*/
+
+#carte-grise{
+    margin: 30px;
+    width: 350px;
+    height: 350px;
+    box-shadow: grey 1px 1px 1px 1px ;
+    display: flex;
+    flex-direction: column;
+}
+
+.haut-gris{
+    background-color: #2C3B41;
+    flex: 1;
+}
+
+.bas-gris{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+    background-color: #2C3B41;
+}
+
+
+.avatar-gris{
+    background-color: #2C3B41;
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+    border: 5px solid white;
+    position: relative;
+    top: 120px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    cursor: pointer;
+}
+
+.avatar-div-gris{
+    color: #40A681;
+    display: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar-gris:hover{
+    color: #FF473E;
+    background-color: #1f2b30;
+}
+
+.texte-add-poules{
+    color: #1f2b30;
+}
+
+/*MESSAGE CARD ADD POULE*/
+
+.texte-add-poules{
+    color: white;
+}
+/*MESSAGE EN JS */
+
+#message-zero-carte{
+    color: white;
+    width: 90%;
+    text-align: left;
+    font-size: 1.5em;
+}
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 1300px){
+
+    .content{
+        width: 100%;
+        margin: 0;
+
+    }
+
+    .content h2{
+        text-align: center;
+    }
+}

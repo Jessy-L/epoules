@@ -1,0 +1,289 @@
+body{
+    background-color: #F6F8F5;
+}
+
+.content-page{
+    display: flex;
+
+}
+
+.content{
+
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+.content h2{
+    font-size: 35px;
+    padding: 10px;
+}
+
+.droite-page{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* MINI CARTE*/
+
+.info{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.div-bloc-info{
+    display: flex;
+    width: 300px;
+}
+
+.gauche{
+    padding: 15px;
+   
+}
+
+.droite{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.valeur{
+    font-size: 35px;
+}
+
+/* GESTION DES COULEURS */
+
+:root{
+
+    --color-nb-oeuf-droite: #605CA8;
+    --color-nb-oeuf-gauche: #534288;
+
+    --color-nouriture-droite: #EF8333;
+    --color-nouriture-gauche: #DA6400;
+
+    --color-eau-droite: #52C1EF;
+    --color-eau-gauche: #009BC2;
+
+    --color-temperature-droite: #DD4B39;
+    --color-temperature-gauche: #C12719;
+
+}
+
+
+/* color nbOeuf*/
+
+.nboeuf-d{
+    background-color: var(--color-nb-oeuf-droite);
+}
+.nboeuf-g{
+    background-color: var(--color-nb-oeuf-gauche);
+}
+
+/*color Nouriture*/
+
+.nouriture-g{
+    background-color: var(--color-nouriture-gauche);
+}
+
+.nouriture-d{
+    background-color: var(--color-nouriture-droite);
+}
+
+/*color EAU*/
+
+.eau-g{
+    background-color: var(--color-eau-gauche);
+}
+
+.eau-d{
+    background-color: var(--color-eau-droite);
+}
+
+/*color TEMPERATURES*/
+
+.temperature-g{
+    background-color: var(--color-temperature-gauche);
+}
+
+.temperature-d{
+    background-color: var(--color-temperature-droite);
+}
+
+
+
+/*Timeline*/
+
+.info-timeline{
+    margin: 100px;
+
+}
+
+.day{
+    background-color: #40A681;
+    width: 90px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.card-info{
+    display: flex;
+    width: 100%;
+    height: 250px;
+}
+
+.img-barre{
+    min-width: 110px;
+    overflow: hidden;
+}
+.barre{
+    position: relative;
+    left: 50px;
+    width: 5px;
+    height: 100%;
+    background-color: grey;
+}
+
+.barre-haut{
+    position: relative;
+    left: 50px;
+    width: 5px;
+    height: 20px;
+    background-color: grey;
+}
+
+.icon-timeline{
+    position: relative;
+    z-index: 1;
+    width: 80px;
+    height: 80px;
+    margin-left: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte-info-poule{
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px;
+}
+.titre{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid grey;
+}
+
+.description{
+    display: flex;
+    justify-content: space-around;
+}
+
+.avatar{
+    padding: 15px;
+}
+
+.clock-icon{
+    width: 15px;
+}
+
+.information-poulailler{
+    background-color: white;
+    margin-top: 100px;
+}
+
+.tab-info{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.stats-de-ponte{
+    margin-top: 50px;
+    background-color: white;
+    padding: 1px 20px;
+    font-weight: lighter;
+}
+
+.stats-de-ponte h3{
+    border-bottom: 1px solid #DDDDDD;
+}
+
+.texte-valeur{
+    color: #009BC2;
+    font-weight: bolder;
+}
+
+.nom-du-site{
+    font-size: 20px;
+}
+
+
+/* PARTIE INFO A DROITE DE L'ECRAN*/
+
+.info-tab-graph{
+
+}
+
+/* RESPONSIVE */
+
+
+@media (max-width: 1200px){
+
+    .description p{
+        font-size: 13px;
+
+    }
+
+    .info-tab-graph {
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+
+    .droite-page{
+        display: none;
+    }
+
+    .info{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .div-bloc-info{
+        margin: 5px auto;
+
+    }
+}
+
+@media (max-width: 1300px){
+
+    .div-bloc-info{
+        flex-basis: 50%;
+    }
+
+    .content{
+        width: 100%;
+        margin: 0;
+    }
+
+    .content h2{
+        text-align: center;
+    }
+}

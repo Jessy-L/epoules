@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css//leform/form.css">
+    <link rel="stylesheet" href="css//leform/responsive-form.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>EPOULES</title>
+</head>
+<body>
+    <div class="content-form-img">
+
+        <div class="img-poule">
+            <img src="img/poules.jpg" alt="Image de poules">
+        </div>
+
+        <div class="content-form">
+
+            <div class="icon-poule-form">
+                <img src="img/icone-poule.png" alt="Icone de poule">
+
+                <p class="epoule" ><span class="e">e</span>poules</p>
+            </div>
+            
+            <form method="POST" id="formulaire" action="lesPoules.html">
+         
+                <fieldset class="login">
+                    <input type="text" placeholder="identifiant" id="login"/>
+                </fieldset>
+
+                <fieldset class="password">
+                    <input type="password" placeholder="password" id="password"/>
+                </fieldset>
+
+                <p id="err"></p>
+
+                <input type="button" id="valider" value="VALIDER">
+
+            </form>
+
+        </div>
+    </div>
+
+<script src="js/form/verifFormulaire.js"></script>
+</body>
+</html>

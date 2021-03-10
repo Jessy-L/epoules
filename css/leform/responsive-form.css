@@ -1,0 +1,13 @@
+@media (max-width: 960px){
+
+    .content-form-img .img-poule{
+        display: none;
+    }
+
+
+    .content-form{
+
+       height: 100vh;
+    }
+
+}

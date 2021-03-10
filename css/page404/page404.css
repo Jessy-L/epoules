@@ -1,0 +1,39 @@
+body{
+    background-color: #222D32;
+    color: white;
+    
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.icon-poule{
+    text-align: center;
+}
+
+.icon-poule img{
+    width: 30%;
+}
+
+.epoule{
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: #40A681;
+}
+
+.e{
+    color: #FF473E;
+}
+
+a{
+    color: #FF473E
+}
+a:hover{
+    color: #40A681
+}

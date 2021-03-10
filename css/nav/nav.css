@@ -1,0 +1,141 @@
+aside{
+    background-color: #222D32;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    text-align: center;
+    max-width: 400px;
+}
+
+/*HAM MENU*/
+
+#ham-btn{
+    display: none;
+}
+
+
+/* E POULES*/
+
+.icon-poule img{
+    width: 50%;
+}
+
+.epoule{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+    color: #40A681;
+}
+
+.e{
+    color: #FF473E;
+}
+
+nav{
+    margin-top: 20px;
+    background-color: #2C3B41;
+    padding: 1vw;
+    text-align: left;
+}
+
+nav ul li a {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    color: #89A3AE;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.icon-poule-responsive{
+    display: none;
+}
+
+.icon{
+    width: 30px;
+    margin-right: 5px;
+    filter: invert(100%) opacity(0.5);
+    -webkit-filter: invert(100%) opacity(0.5);
+}
+
+@media (max-width: 1300px){
+
+
+    /*BLOCK ECRAN*/
+
+    .content-page{
+        flex-direction: column;
+    }
+
+    /*ASIDE + NAV RESPONSIVE*/
+
+    aside{
+        display: flex;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99998;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    nav{
+        width: 100%;
+        
+    }
+    nav ul li a{
+        text-align: center;
+        width: 200px;
+        margin: auto;
+    }
+
+    /*BUTTON HAMBURGER*/
+
+    #ham-btn{
+
+        width: 70px;
+        height: 70px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        left: 10px;
+        top: 10px;
+        font-size: 70px;
+        background: #40A681;
+        color: white;
+
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+
+        cursor: pointer;
+        z-index: 99999;
+    }
+
+    /*BLOCK TETE-RESPONSIVE */
+
+    #tete-responsive{
+        text-align: center;
+        width: 100%;
+    }
+
+    .icon-poule-responsive img{
+        width: 120px;
+    }
+    .icon-poule-responsive{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
