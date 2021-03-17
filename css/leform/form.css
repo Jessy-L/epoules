@@ -93,6 +93,7 @@ fieldset{
 input[type=submit],input[type=button]{
     margin-top: 20px;
     background-color: #40A681;
+    border-color: #40A681;
     color: white;
     padding: 5px;
     transition:  0.5s;
