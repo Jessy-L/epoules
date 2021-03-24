@@ -6,9 +6,9 @@ var aside = document.getElementById('nav-block')
 var stock = 1
 
 var allLi = document.querySelectorAll('nav ul li')
-allLi.forEach(element => {
-    element.addEventListener('click', affichageNav)
-});
+// allLi.forEach(element => {
+//     element.addEventListener('click', affichageNav)
+// });
 
 
 function affichageNav(){
@@ -18,7 +18,6 @@ function affichageNav(){
 
         aside.style.display = "none"
         stock--
-
         
     }else if(stock == 0){
         aside.style.display = "flex"
@@ -38,9 +37,15 @@ function removeData(){
 
     if(window.innerWidth > 1300){
         aside.style.display = "block"
+        allLi.forEach(element => {
+            element.removeEventListener('click', affichageNav)
+        });
     }else{
         stock = 1 
         affichageNav()
+        allLi.forEach(element => {
+            element.addEventListener('click', affichageNav)
+        });
         
     }
 }    

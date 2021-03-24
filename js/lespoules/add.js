@@ -1,14 +1,15 @@
 var div = document.querySelector('.content-all-cartes')
 var add = document.getElementById('carte-grise').addEventListener("click", addPoules)
 
-cartes_all = document.querySelectorAll('.carte')
 
 function addPoules(){
-    
+
+    cartes_all = document.querySelectorAll('.carte')
+
+
     var content  = 
 
     `
-
         <div class="haut">
             <p class="nom">PouleRousse</p>
             <p class="date-ajout">ajoutée le 22/03/2020</p>
@@ -51,9 +52,7 @@ function addPoules(){
             </div>
 
         </div>
-
     `
-    
     newcarte = document.createElement('div')
     newcarte.classList = "carte"
     newcarte.innerHTML = content
@@ -66,7 +65,6 @@ function addPoules(){
 
     recup()
 }
-
 
 function recup(){
 
